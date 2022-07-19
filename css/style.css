@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------
+# general
+--------------------------------------------------------------*/
 * {
   font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
@@ -9,6 +12,72 @@ body {
   margin: 0;
 }
 
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #fff;
+  border-top-color: #f7a93f;
+  border-bottom-color: #f7a93f;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# main
+--------------------------------------------------------------*/
 main {
   position: relative;
   height: 100vh;
@@ -83,6 +152,18 @@ main footer img {
   }
   main .left img {
     width: 15vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  main footer img {
+    width: 10vw;
+  }
+  main .right img {
+    width: 10vw;
+  }
+  main .left img {
+    width: 10vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
