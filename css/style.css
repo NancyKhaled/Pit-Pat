@@ -1,0 +1,88 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+}
+
+main .right {
+  float: right;
+}
+
+main .right img {
+  width: 25vw;
+  height: 60vh;
+}
+
+main .content {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .content img {
+  width: 150px;
+}
+
+main .content h1 span {
+  color: #f7a93f;
+}
+
+main .content p {
+  color: #9e9e9e;
+}
+
+main .left {
+  float: left;
+}
+
+main .left img {
+  width: 25vw;
+  height: 80vh;
+}
+
+main footer {
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+}
+
+main footer img {
+  width: 50vw;
+}
+
+@media (min-width: 768px) {
+  main footer img {
+    width: 30vw;
+  }
+  main .right img {
+    width: 20vw;
+  }
+  main .left img {
+    width: 20vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  main footer img {
+    width: 20vw;
+  }
+  main .right img {
+    width: 15vw;
+  }
+  main .left img {
+    width: 15vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
