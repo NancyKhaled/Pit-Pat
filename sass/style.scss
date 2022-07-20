@@ -151,6 +151,16 @@ main {
                 width: 20vw;
             }
         }
+
+        .content {
+            img {
+                width: 200px;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+        }
     }
 
     @media (min-width: 1024px) {
@@ -188,7 +198,7 @@ main {
 
         .left {
             img {
-                width: 10vw;
+                width: 12vw;
             }
         }
     }
